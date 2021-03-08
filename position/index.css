@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  min-height:1000px;
+  
+  align-items: ;
+
+}
+
+.positionrelative {
+  height: 100px;
+  width: 500px;
+  border: 2px solid skyblue;
+  margin: 0 auto;
+  font-size: 1em;
+  background-color: black;
+}
+.suphead {
+  color: palevioletred;
+}
+
+.superscript {
+  position: relative;
+  font-size: 0.5em;
+  top: -1rem;
+  color: white;
+}
+
+.positionfixed {
+  position: fixed;
+  bottom:1rem;
+  left: 1rem;
+  border: 2px solid skyblue;
+  padding: 1rem;
+  font-size: 0.7em;
+  font-style: normal;
+  border-radius: 15px;
+}
+
+.modalbutton button {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: springgreen;
+  color: black;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  border-radius: 15px;
+}
+.modal {
+  position: fixed;
+  padding-top: -200px; /* Location of the box */
+  padding-left: 400px;
+  left: 0;
+  top: 0;
+  width: 40%; /* Full width */
+  height: 100%; /* Full height */
+  display: none;
+}
+.close {
+  color: whitesmoke;
+  float: right;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.modal-content {
+  padding: 1rem;
+  background-color: #d63031;
+  color: whitesmoke;
+}
+
+.floatingbutton  button
+{
+  
+    
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    background:black;
+    border:none;
+    outline:none;
+    color:#FFF;
+    font-size:36px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:.3s;  
+    position: fixed;
+    bottom:2rem;
+    right:2rem;
+}
+.cardrow 
+{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card 
+{
+  border:1px solid black;
+  width:300px;
+  margin:0 auto;
+  margin-bottom: 0.5rem;
+  height:450px;
+}
+  
+.thumbnail 
+{
+  width:200px;
+  height:300px;
+  position: relative;
+}
+.thumbnail img 
+{
+  /* height:200px;
+  width:200px; */
+  height: 100%;
+  width:300px;
+  background-color: gray;
+}
+.badge 
+{
+  position: absolute;
+  top:2rem;
+  background-color: yellow;
+  margin-left: 0.1rem;
+  font-size: 1.2em;
+  padding:0.2em;
+}
+.ex 
+{
+  position:absolute;
+  top:1rem;
+  right:-5rem;
+
+}
+.overlaytext
+{
+  position: absolute;
+ bottom:-0.5rem;
+ left:1rem;
+ background-color: palegreen;
+ font-size: 1rem;
+ padding:0.3rem;
+}
+.card h3,h4,h5,p
+{
+  text-align: start;
+  padding-left: 0.3rem;
+}
+.card h4
+{
+  color:silver;
+}
+.tag 
+{ font-weight: 900;}
+
+

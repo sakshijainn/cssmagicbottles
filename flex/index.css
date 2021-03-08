@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body 
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.row 
+{
+    width:500px;
+    height: 500px;
+    background-color: skyblue;
+    margin: 0 auto;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:2px solid black;
+    margin-bottom: 1rem;
+    
+}
+.child 
+{
+    width: 100%;
+    height:150px;
+    border-bottom:2px solid white;
+
+}
+
+.child-one 
+{
+    background-color: springgreen;
+}
+
+.child + .child-two 
+{
+    background-color: thistle;
+    align-self: flex-end;
+}
+.child-three 
+{
+    background-color: tomato;
+}
+
+.row2 
+{
+    display: flex;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+   
+}
+
+.row2child 
+{
+    height:100px;
+    width:200px;
+    border:2px solid black;
+    background-color: chartreuse;
+    
+
+}
+.bottom 
+{
+    align-self: flex-end;
+    background-color: crimson;
+    color:wheat;
+}
+
+.row3 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ 
+    
+
+}
+
+.card 
+{
+    border:2px solid black;
+    flex-direction: column;
+    margin:0.7rem;
+    padding: 1rem;
+    max-width: 350px;
+    height: 500px;
+    display: flex;
+    background-color: black;
+    color:white;
+    
+    
+  
+   
+}
+
+.card button 
+{
+    background-color: crimson;
+    color:white;
+    outline: none;
+    border: none;
+    padding:1rem;
+    font-size: 1rem;
+}
+.card p 
+{
+    flex-grow: 1;
+}

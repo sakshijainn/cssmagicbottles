@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body,html 
+{
+    height:100vh;
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+
+}
+
+body
+{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60fr 60fr 10fr ;
+  grid-template-areas: "header header header"
+                        "main main main"
+                        "footer footer footer"; 
+}
+
+header 
+{
+  grid-area: header;
+  background-color: #000000;
+  color:white;
+ height: 390px;
+
+}
+#title
+{
+  font-size: 2rem;
+  padding-left: 6rem;
+}
+main 
+{
+  grid-area: main;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  grid-gap: 1rem;
+}
+footer 
+{
+  grid-area: footer;
+  background-color: #15171A;
+  color: white;
+ 
+ 
+}
+.headerlist ul ,endli ul, .footerli ul 
+{
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  
+}
+
+.headerlist ul li , .endli ul li, .footerli ul li 
+{
+  
+    display: inline;
+    float: left;
+    padding:0.5rem;
+    font-size: 0.8rem;
+  
+}
+.lower ul 
+{
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+.lower ul li 
+{
+  margin-top: 2rem;
+  padding:1.3rem;
+  font-size: 1rem;
+}
+
+.lower ul li #about 
+{
+  background-color: transparent;
+  color:whitesmoke;
+  border:1px solid white;
+  padding:0.3rem;
+  font-size: 0.9rem;
+  border-radius: 3px;
+}
+.heading-text
+{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+
+  
+}
+
+article
+{
+  display: flex;
+  flex-flow: column;
+  
+  padding:0.5rem;
+  margin: 0.3rem;
+ 
+}
+
+article button
+{
+  flex-grow: 1;
+}
+
+.postcard img 
+{
+  width: auto;
+    height: 250px;
+    background-size: cover;
+    
+}
+.mainfooter 
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+.endli ul li 
+{
+  font-size: 1rem;
+}
+

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body,html 
+{
+    height:100vh;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body 
+{
+    margin:0;
+    display: grid;
+    /* 2 columns */
+    grid-template-columns: 20%  auto; 
+    /* 5 rows */
+    grid-template-rows: 10% 34% 20% 21% 13%;
+    grid-template-areas: "aside header"
+                         "aside  main "
+                         "aside section"
+                         "aside section"
+                         "aside section "
+                         ;
+   grid-gap: 2px;
+ 
+}
+
+aside 
+{
+    grid-area: aside;
+    background-color: black;
+}
+header 
+{
+    grid-area: header;
+    background-color: #BE90D4;
+}
+
+main
+{
+    grid-area: main;
+    background-color: #F2F1EF;
+}
+  
+section #sec-1
+{
+    grid-area: section;
+    display: grid;
+  justify-content: center;
+  align-content: center;
+   
+
+    
+    
+}
+section #sec-2
+{
+    grid-area: section;
+    
+}
+section #sec-3
+{
+    grid-area: section;
+    
+}
+
+h2 ,h3,h4,h5,h6
+{
+    padding-left:1rem;
+}
+
+h3 
+{
+    font-size: 1.7rem;
+}
+h4
+{
+    font-size: 1.2rem;
+}
+h5 
+{
+    font-size: 1rem;
+}
+#sec-1 button 
+{
+ background-color: black;
+ outline: none;
+ padding:0.6rem;
+ border: none;
+ color:white;
+ border-radius: 10px;
+ font-size: 1.3rem;
+ margin-top: 1%;
+ margin-left: 16%;
+
+   
+
+ 
+}
+
+ul {
+    list-style: none;
+    color:white;
+    font-size: 1.1rem;
+  }
+  ul li::before {
+    content: "";
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fb-heart.gif);
+    background-size: contain;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top: 0.1rem;
+    margin-right: 0.2rem;
+  
+  }
+
+
+
+
+
+@media screen and (max-width:768px)
+{
+    
+body 
+{
+    margin:0;
+    display: grid;
+    /* 2 columns */
+    grid-template-columns: 100%; 
+    /* 5 rows */
+    grid-template-rows: 60px 150px 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+                         "header"
+                         "aside"
+                         "main"
+                         "section"
+                         "section"
+                         "section";
+   grid-gap: 2px;
+}
+#sec-1 button 
+{
+
+ padding:0.8rem;
+ font-size: 0.9rem;
+ margin-left: 6%;
+   
+
+ 
+}
+ul 
+{
+    font-size: 1.1rem;
+}
+
+
+}
+
